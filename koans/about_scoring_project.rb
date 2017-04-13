@@ -30,6 +30,7 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 # Your goal is to write the score method.
 
 def score(dice)
+  dice.sort
   # You need to write this method
 end
 
