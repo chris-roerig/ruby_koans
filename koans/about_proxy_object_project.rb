@@ -18,6 +18,10 @@ class Proxy
     # ADD MORE CODE HERE
   end
 
+  def method_missing(method_name, *args, &block)
+    @object.send(method_name, args, &block)
+  end
+
   # WRITE CODE HERE
 end
 
